@@ -1,74 +1,105 @@
-# 🚀 My Portfolio Website
+# 🌌 Shristi Rajpoot — 3D Developer Portfolio
 
-Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
+Welcome to my personal **3D portfolio website**, where engineering meets design.  
+This site showcases my **projects, experience, skills, and technical journey** through an interactive, modern interface.
 
-![Portfolio Preview](https://github.com/Naresh-Khatri/Portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
+🚀 Built to reflect how I think, build, and ship real-world systems.
 
-## 🔥 Features
+---
+### 🧑‍🚀 Portfolio Preview
+#### 🌐 Navigation Sections
+| Landing                                                                                                          | Contact                                                                                                        | Skills                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| ![](https://raw.githubusercontent.com/Shristirajpoot/Portfolio/main/public/assets/nav-link-previews/landing.png) | ![](https://raw.githubusercontent.com/Shristirajpoot/Portfolio/main/public/assets/nav-link-previews/contact.png) | ![](https://raw.githubusercontent.com/Shristirajpoot/Portfolio/main/public/assets/nav-link-previews/skills.png) |
 
-- **3D Animations**: Custom-made interactive keyboard using Spline with skills as keycaps that reveal titles and descriptions on hover.
-- **Slick Interactions**: Powered by GSAP and Framer Motion for smooth animations on scroll, hover, and element reveal.
-- **Space Theme**: Particles on a dark background to simulate a cosmic environment, making the experience out of this world.
-- **Responsive Design**: Fully responsive across all devices to ensure the best user experience.
-- **Innovative Web Design**: Combining creativity with functionality to push the boundaries of modern web design.
+| Projects                                                                                                          | Blog                                                                                                          |                                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| ![](https://raw.githubusercontent.com/Shristirajpoot/Portfolio/main/public/assets/nav-link-previews/projects.png) | ![](https://raw.githubusercontent.com/Shristirajpoot/Portfolio/main/public/assets/nav-link-previews/blog.png) 
+
+
+
+## ✨ Highlights
+
+- 🎨 **Modern 3D-inspired UI** with smooth animations  
+- ⚡ **High-performance Next.js app** (App Router)  
+- 🧠 **Project-focused storytelling** (system design + impact)  
+- 🧩 **Reusable component architecture**  
+- 🌙 **Dark-mode first** developer-friendly design  
+- 📱 Fully responsive across devices  
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
-- **Animations**: GSAP, Framer Motion, Spline Runtime
-- **Misc**: Resend, Socketio, Zod
+### Frontend
+- ⚛️ **Next.js 14**
+- ⚡ **React**
+- 🎬 **Framer Motion**
+- 🎨 **Tailwind CSS**
+- 🧱 **shadcn/ui**
+- 🌀 **Spline (3D elements)**
 
-## 🚀 Getting Started
+### Tooling & Platform
+- 🧑‍💻 TypeScript
+- 📦 npm
+- 🌍 Vercel (deployment)
 
-### Prerequisites
+---
 
-- Node.js (v14+)
-- npm or yarn
+## 📂 Project Sections
 
-### Installation
+Each project includes:
+- 📌 Clear problem statement
+- 🧠 Architecture & tech choices
+- 🛠️ Tech stack (frontend & backend)
+- 🖼️ Screenshots & slideshows
+- 🔗 Live / GitHub links
 
-1. Clone the repository:
+### Featured Projects
+- 🎟️ **TicketHub** — Distributed ticketing system (Go, Redis, PostgreSQL)
+- 💳 **PaySwift** — FinTech payment gateway
+- 🗳️ **VoteChain** — Blockchain-based e-voting system
+- 🤖 **Gestura** — AI-powered sign language translator
+- 🧬 **WebClonePro** — AI website cloning tool
+- 🛒 **Senticome** — NLP-based e-commerce platform
 
-    ```bash
-    git clone https://github.com/Naresh-Khatri/Portfolio.git
-    ```
+---
 
-2. Navigate to the project directory:
+## 🧭 Experience
 
-    ```bash
-    cd Portfolio
-    ```
+A dedicated **Experience section** highlighting:
+- 💼 Internships
+- 🧠 Open-source contributions
+- 🚀 Independent engineering projects
+- 🧪 AI, backend, and system design work
 
-3. Install dependencies:
+---
 
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
+## 📰 Tech Notes (Coming Soon)
 
-4. Run the development server:
+✍️ Short engineering write-ups on:
+- Backend system design
+- AI & ML pipelines
+- Performance optimizations
+- Lessons learned from real projects
 
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    ```
+No fluff — just practical insights.
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the magic!
+---
 
-## 🚀 Deployment
+## 🚀 Getting Started (Local Setup)
 
-This site is deployed on Vercel. For your own deployment, follow these steps:
+```bash
+git clone https://github.com/your-username/your-portfolio-repo.git
+cd your-portfolio-repo
+npm install
+npm run dev
+```
+Open 👉 http://localhost:3000
 
-1. Push your code to a GitHub repository.
-2. Connect your repository to Vercel.
-3. Vercel will handle the deployment process.
+## 👩‍💻 Author
+### Shristi Rajpoot
+- 📧 Email: shristirajpoot369@gmail.com
+- 🔗 GitHub: @Shristirajpoot
 
-## 🤝 Contributing
-
-If you'd like to contribute or suggest improvements, feel free to open an issue or submit a pull request. All contributions are welcome!
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+### 🌟 If you liked this project, consider starring the repo and sharing it!
