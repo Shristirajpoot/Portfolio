@@ -1,46 +1,53 @@
-import { EmailTemplate } from "@/components/email-template";
-import { config } from "@/data/config";
 import { Resend } from "resend";
 import { z } from "zod";
 
-export const dynamic = "force-dynamic";
-const resend = new Resend(process.env.RESEND_API_KEY);
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic"; // 👈 VERY IMPORTANT
 
-const Email = z.object({
-  fullName: z.string().min(2, "Full name is invalid!"),
-  email: z.string().email({ message: "Email is invalid!" }),
-  message: z.string().min(10, "Message is too short!"),
+const Schema = z.object({
+  fullName: z.string().min(2),
+  email: z.string().email(),
+  message: z.string().min(10),
 });
+
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    console.log(body);
-    const {
-      success: zodSuccess,
-      data: zodData,
-      error: zodError,
-    } = Email.safeParse(body);
-    if (!zodSuccess)
-      return Response.json({ error: zodError?.message }, { status: 400 });
-
-    const { data: resendData, error: resendError } = await resend.emails.send({
-      from: "Shristi Rajpoot <onboarding@resend.dev>",
-
-      to: [config.email],
-      subject: "Contact me from portfolio",
-      react: EmailTemplate({
-        fullName: zodData.fullName,
-        email: zodData.email,
-        message: zodData.message,
-      }),
-    });
-
-    if (resendError) {
-      return Response.json({ resendError }, { status: 500 });
+    if (!process.env.RESEND_API_KEY) {
+      return Response.json(
+        { error: "Email service not configured" },
+        { status: 500 }
+      );
     }
 
-    return Response.json(resendData);
+    const body = await req.json();
+    const parsed = Schema.safeParse(body);
+
+    if (!parsed.success) {
+      return Response.json({ error: "Invalid data" }, { status: 400 });
+    }
+
+    const { fullName, email, message } = parsed.data;
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    await resend.emails.send({
+      from: "Portfolio <onboarding@resend.dev>",
+      to: ["shristirajpoot369@gmail.com"],
+      subject: "New Portfolio Contact",
+      html: `
+        <h2>New Contact Message</h2>
+        <p><strong>Name:</strong> ${fullName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
+    });
+
+    return Response.json({ success: true });
   } catch (error) {
-    return Response.json({ error }, { status: 500 });
+    return Response.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
   }
 }
