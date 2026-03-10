@@ -81,13 +81,13 @@ const HeroSection = () => {
                 </BlurIn>
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
-                <Link
-                  href={
-                    "href="https://drive.google.com/file/d/1IUFBvI5P6BpFLk_8ppRTnkWYEbw7WZQa/view?usp=drive_link""
-                  }
-                  target="_blank"
-                  className="flex-1"
-                >
+               
+                  <Link
+  href="https://drive.google.com/file/d/1IUFBvI5P6BpFLk_8ppRTnkWYEbw7WZQa/view?usp=drive_link"
+  target="_blank"
+  className="flex-1"
+>
+                 
                   <BoxReveal delay={2} width="100%" >
                     <Button className="flex items-center gap-2 w-full">
                       <File size={24} />
