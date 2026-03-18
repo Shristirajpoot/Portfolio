@@ -82,19 +82,18 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
                
-                  <Link
-  href="https://drive.google.com/file/d/1IUFBvI5P6BpFLk_8ppRTnkWYEbw7WZQa/view?usp=drive_link"
+              <Link
+  href="https://drive.google.com/file/d/1eb656olr5bv0QUFopld5iJKRPMqKxER7/view?usp=drive_link"
   target="_blank"
   className="flex-1"
 >
-                 
-                  <BoxReveal delay={2} width="100%" >
-                    <Button className="flex items-center gap-2 w-full">
-                      <File size={24} />
-                      <p>Resume</p>
-                    </Button>
-                  </BoxReveal>
-                </Link>
+  <BoxReveal delay={2} width="100%">
+    <Button className="flex items-center gap-2 w-full">
+      <File size={24} />
+      <p>Resume</p>
+    </Button>
+  </BoxReveal>
+</Link>
                 <div className="md:self-start flex gap-3">
                   <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>
