@@ -83,7 +83,7 @@ const HeroSection = () => {
               <div className="mt-8 flex flex-col gap-3 w-fit">
                
              <Link
-  href="https://drive.google.com/file/d/1_iEaOup2-bbUB-AtgtwjQQl6V2niKCZR/view?usp=drive_link"
+  href="https://drive.google.com/file/d/19GAdNis6KAxiAPrU2HT0ecrZAsfYb04n/view?usp=drive_link"
   target="_blank"
   className="flex-1"
 >
