@@ -31,9 +31,13 @@ export enum SkillNames {
 
   TENSORFLOW = "tensorflow",
   OPENCV = "opencv",
-  NLP = "nlp",
-  SOLIDITY = "solidity",
-  ETHEREUM = "ethereum",
+ DJANGO = "django",
+EXPRESS = "express",
+FIREBASE = "firebase",
+POSTMAN = "postman",
+GEMINI = "gemini",
+MEDIAPIPE = "mediapipe",
+SOCKETIO = "socketio",
 }
 
 export type Skill = {
@@ -50,7 +54,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 1,
     name: "python",
     label: "Python",
-    shortDescription: "Primary language for AI, ML pipelines, and backend systems.",
+    shortDescription: "Primary language for backend engineering, AI, automation, and machine learning",
     color: "#3776AB",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
@@ -59,7 +63,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 2,
     name: "javascript",
     label: "JavaScript",
-    shortDescription: "Core language for full-stack development.",
+    shortDescription: "Core language for building scalable web applications.",
     color: "#f0db4f",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
@@ -68,7 +72,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 3,
     name: "typescript",
     label: "TypeScript",
-    shortDescription: "Type-safe scalable frontend & backend systems.",
+    shortDescription: "Type-safe development for large-scale frontend and backend applications.",
     color: "#007acc",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
@@ -77,7 +81,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 4,
     name: "go",
     label: "Go",
-    shortDescription: "High-performance concurrent backend services.",
+    shortDescription: "Concurrent backend services and high-performance APIs.",
     color: "#00ADD8",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
   },
@@ -86,7 +90,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 5,
     name: "sql",
     label: "SQL",
-    shortDescription: "Relational database querying and optimization.",
+    shortDescription: "Database design, querying, and performance optimization.",
     color: "#336791",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
@@ -95,7 +99,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 6,
     name: "react",
     label: "React",
-    shortDescription: "Interactive and scalable UI development.",
+    shortDescription: "Building modern, responsive, component-driven user interfaces.",
     color: "#61dafb",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
@@ -104,16 +108,23 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 7,
     name: "nextjs",
     label: "Next.js",
-    shortDescription: "Production-ready full-stack React framework.",
+    shortDescription: "Production-ready full-stack React framework with SSR and routing.",
     color: "#ffffff",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
-
+  [SkillNames.TAILWIND]: {
+    id: 8,
+    name: "tailwind",
+    label: "tailwind",
+    shortDescription: "Utility-first CSS framework for rapid UI development.",
+    color: "#ffffff",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
   [SkillNames.FASTAPI]: {
     id: 8,
     name: "fastapi",
     label: "FastAPI",
-    shortDescription: "High-performance Python REST APIs.",
+    shortDescription: "Building high-performance REST APIs with automatic OpenAPI documentation.",
     color: "#009688",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
   },
@@ -224,30 +235,61 @@ export type Experience = {
 };
 
 export const EXPERIENCE: Experience[] = [
+ {
+id:1,
+
+startDate:"May 2025",
+
+endDate:"Jul 2025",
+
+title:"Backend Development Intern",
+
+company:"Bluestock Fintech",
+
+description:[
+"Developed production-grade backend services using FastAPI and PostgreSQL.",
+"Built and maintained 10+ REST APIs supporting financial workflows and integrations.",
+"Implemented authentication, request validation, and structured exception handling.",
+"Optimized PostgreSQL queries and collaborated with frontend teams for API integration."
+],
+
+skills:[
+SkillNames.PYTHON,
+SkillNames.FASTAPI,
+SkillNames.POSTGRES,
+SkillNames.DOCKER,
+SkillNames.POSTMAN
+],
+},
+   {
+id:2,
+
+startDate:"Aug 2025",
+
+endDate:"Apr 2026",
+
+title:"Student Developer (Team Lead)",
+
+company:"Fusion ERP Portal • IIITDM Jabalpur",
+
+description:[
+"Led a team of 10 developers building ERP modules for IIITDM Jabalpur.",
+"Developed backend features using Django, Python, SQL, and Git.",
+"Coordinated task planning, code reviews, and module integration across contributors."
+],
+
+skills:[
+SkillNames.DJANGO,
+SkillNames.PYTHON,
+SkillNames.SQL,
+SkillNames.GIT
+],
+},
   {
-    id: 1,
-    startDate: "Jul 2025",
-    endDate: "Aug 2025",
-    title: "SDE Intern",
-    company: "Bluestock Fintech",
-    description: [
-      "Worked on production-grade fintech backend systems using FastAPI and PostgreSQL.",
-      "Developed and optimized 10+ REST APIs for secure data handling and integrations.",
-      "Improved system performance, reliability, and scalability.",
-    ],
-    skills: [
-      SkillNames.PYTHON,
-      SkillNames.FASTAPI,
-      SkillNames.POSTGRES,
-      SkillNames.DOCKER,
-      SkillNames.AWS,
-    ],
-  },
-  {
-    id: 2,
+    id: 3,
     startDate: "Sep 2025",
     endDate: "Nov 2025",
-    title: "Intern",
+    title: "Software Engineer Intern",
     company: "Infosys Springboard",
     description: [
       "Worked on industry-relevant software development projects.",
@@ -260,25 +302,56 @@ export const EXPERIENCE: Experience[] = [
       SkillNames.LINUX,
     ],
   },
-  {
-    id: 3,
-    startDate: "2023",
-    endDate: "Present",
-    title: "AI & Full-Stack Developer",
-    company: "Independent Projects & Open Source",
-    description: [
-      "Built AI-powered systems in fraud detection, NLP, and computer vision.",
-      "Developed full-stack and blockchain-based applications with real-world impact.",
-      "Contributed to industrial-grade open-source projects (GSSoC, SSOC).",
-    ],
-    skills: [
-      SkillNames.PYTHON,
-      SkillNames.TENSORFLOW,
-      SkillNames.OPENCV,
-      SkillNames.REACT,
-      SkillNames.NEXTJS,
-    ],
-  },
+ {
+id:4,
+
+startDate:"Jun 2026",
+
+endDate:"Present",
+
+title:"Intern Developer",
+
+company:"Itransition",
+
+description:[
+"Selected after clearing the competitive placement test.",
+"Participating in mentor-led software engineering training focused on backend and frontend development.",
+"Building industry-standard software engineering practices through collaborative assignments."
+],
+
+skills:[
+SkillNames.PYTHON,
+SkillNames.GIT,
+SkillNames.LINUX,
+SkillNames.DJANGO
+],
+},{
+id:5,
+
+startDate:"2023",
+
+endDate:"Present",
+
+title:"AI & Full-Stack Developer",
+
+company:"Open Source & Personal Projects",
+
+description:[
+"Built AI-powered applications spanning accessibility, cybersecurity, and computer vision.",
+"Developed full-stack web applications using React, FastAPI, Node.js, and MongoDB.",
+"Contributed to multiple open-source repositories through GSSoC and SSOC."
+],
+
+skills:[
+SkillNames.PYTHON,
+SkillNames.REACT,
+SkillNames.NEXTJS,
+SkillNames.FASTAPI,
+SkillNames.TENSORFLOW,
+SkillNames.OPENCV,
+SkillNames.GEMINI
+],
+},
 ];
 
 /* =========================
