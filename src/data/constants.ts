@@ -441,7 +441,6 @@ export const EXPERIENCE: Experience[] = [
     title: "AI & Full-Stack Developer",
     company: "Open Source & Personal Projects",
     description: [
-      "Built AI-powered applications spanning accessibility, scam detection, and computer vision.",
       "Developed scalable full-stack applications using React, FastAPI, Node.js, MongoDB, and Firebase.",
       "Integrated Gemini APIs, TensorFlow, OpenCV, and MediaPipe into real-world AI projects.",
       "Contributed to multiple open-source repositories through GSSoC and SSOC.",
