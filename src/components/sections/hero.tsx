@@ -33,52 +33,61 @@ const HeroSection = () => {
           {!isLoading && (
             <div className="flex flex-col">
               <div>
-                <BlurIn delay={0.7}>
-                  <p
-                    className={cn(
-                      "md:self-start mt-4 font-thin text-md text-slate-500 dark:text-zinc-400",
-                      "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
-                    )}
-                  >
-                    Hi, I am
-                    <br className="md:hidden" />
-                  </p>
-                </BlurIn>
+              <BlurIn delay={0.7}>
+  <p
+    className={cn(
+      "text-slate-500 dark:text-zinc-400",
+      "font-display text-lg md:text-xl"
+    )}
+  >
+    Hi, I'm
+  </p>
+</BlurIn>
 
-                <BlurIn delay={1}>
-                  <Tooltip delayDuration={300}>
-                    <TooltipTrigger asChild>
-                      <h1
-                        className={cn(
-                          "-ml-[6px] leading-none font-thin text-transparent text-slate-800 text-left",
-                          "font-thin text-7xl md:text-7xl lg:text-8xl xl:text-9xl",
-                          "cursor-default text-edge-outline font-display "
-                        )}
-                      >
-                        {config.author.split(" ")[0]}
-                        <br className="md:block hiidden" />
-                        {config.author.split(" ")[1]}
-                      </h1>
-                    </TooltipTrigger>
-                    <TooltipContent
-                      side="top"
-                      className="dark:bg-white dark:text-black"
-                    >
-                      theres something waiting for you in devtools
-                    </TooltipContent>
-                  </Tooltip>
-                </BlurIn>
-                {/* <div className="md:block hidden bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 w-screen h-px animate-fade-right animate-glow" /> */}
-                <BlurIn delay={1.2}>
-                  <p
-                    className={cn(
-                      "md:self-start md:mt-4 font-thin text-md text-slate-500 dark:text-zinc-400",
-                      "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
-                    )}
-                  >
-                    Full-Stack Engineer
-                  </p>
-                </BlurIn>
+<BlurIn delay={1}>
+  <h1
+    className={cn(
+      "-ml-[6px]",
+      "leading-none",
+      "text-transparent text-edge-outline",
+      "font-display font-thin",
+      "text-7xl md:text-8xl xl:text-9xl"
+    )}
+  >
+    {config.author.split(" ")[0]}
+    <br />
+    {config.author.split(" ")[1]}
+  </h1>
+</BlurIn>
+
+<BlurIn delay={1.2}>
+  <h2
+    className={cn(
+      "mt-5",
+      "font-semibold",
+      "text-2xl md:text-3xl",
+      "text-zinc-900 dark:text-zinc-100"
+    )}
+  >
+    Software Engineer • AI Engineer
+  </h2>
+</BlurIn>
+
+<BlurIn delay={1.35}>
+  <p
+    className={cn(
+      "mt-4",
+      "max-w-xl",
+      "leading-7",
+      "text-base md:text-lg",
+      "text-slate-600 dark:text-zinc-400"
+    )}
+  >
+    I build production-grade AI applications, scalable backend systems,
+    and modern full-stack products using Python, Go, React, FastAPI,
+    Docker, cloud technologies, and machine learning.
+  </p>
+</BlurIn>
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
                
