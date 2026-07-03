@@ -293,7 +293,7 @@ const projects: Project[] = [
   category: "FinTech • Production Engineering",
   title: "Bluestock IPO Platform",
   src: "/assets/projects-screenshots/bluestock/1.png",
-  screenshots: ["1.png", "2.png", "3.png", "4.png"],
+  screenshots: ["1.png", "2.png", "3.png"],
   live: "https://github.com/Shristirajpoot/Bluestock_fintech_webapp",
   github: "https://github.com/Shristirajpoot/Bluestock_fintech_webapp",
  skills: {
@@ -338,7 +338,7 @@ const projects: Project[] = [
             `${BASE_PATH}/bluestock/1.png`,
             `${BASE_PATH}/bluestock/2.png`,
             `${BASE_PATH}/bluestock/3.png`,
-            `${BASE_PATH}/bluestock/4.png`,
+          
           ]}
         />
       </div>
@@ -349,7 +349,7 @@ const projects: Project[] = [
   category: "Full-Stack • Infosys Springboard Internship",
   title: "WasteZero",
   src: "/assets/projects-screenshots/wastezero/1.png",
-  screenshots: ["1.png", "2.png", "3.png"],
+  screenshots: ["1.png", "2.png", "3.png","4.png","5.png","6.png","7.png"],
   live: "https://youtu.be/GqzxXxHSdHk",
   github: "https://github.com/Shristirajpoot/Infosys_Intern",
 skills: {
@@ -400,6 +400,10 @@ skills: {
             `${BASE_PATH}/wastezero/1.png`,
             `${BASE_PATH}/wastezero/2.png`,
             `${BASE_PATH}/wastezero/3.png`,
+             `${BASE_PATH}/wastezero/4.png`,
+             `${BASE_PATH}/wastezero/5.png`,
+             `${BASE_PATH}/wastezero/6.png`,
+             `${BASE_PATH}/wastezero/7.png`,
           ]}
         />
       </div>
@@ -410,8 +414,8 @@ skills: {
   id: "hrchacha",
   category: "Generative AI / LLM Application",
   title: "HRChacha",
-  src: "/assets/projects-screenshots/hrchacha/1.png",
-  screenshots: ["1.png", "2.png", "3.png", "4.png"],
+  src: "/assets/projects-screenshots/hrchacha/ss1.png",
+  screenshots: ["ss1.png", "ss2.png", "ss3.png"],
   live: "https://hrchacha-bmerkgxmqzeiwvlkvjccwt.streamlit.app/",
   github: "https://github.com/Shristirajpoot/HRChacha",
 skills: {
@@ -459,10 +463,10 @@ skills: {
 
         <SlideShow
           images={[
-            `${BASE_PATH}/hrchacha/1.png`,
-            `${BASE_PATH}/hrchacha/2.png`,
-            `${BASE_PATH}/hrchacha/3.png`,
-            `${BASE_PATH}/hrchacha/4.png`,
+            `${BASE_PATH}/hrchacha/ss1.png`,
+            `${BASE_PATH}/hrchacha/ss2.png`,
+            `${BASE_PATH}/hrchacha/ss3.png`,
+         
           ]}
         />
       </div>
@@ -538,7 +542,7 @@ skills: {
   category: "AI • Computer Vision",
   title: "Gestura",
   src: "/assets/projects-screenshots/gestura/1.png",
-  screenshots: ["1.png", "2.png", "3.png"],
+  screenshots: ["1.png", "2.png", "3.png","4.png"],
   live: "https://youtu.be/eQEPefRtuNg",
   github: "https://github.com/Shristirajpoot/Gestura-Retail-Accessibility-AI",
   skills: {
@@ -586,7 +590,9 @@ skills: {
           images={[
             `${BASE_PATH}/gestura/1.png`,
             `${BASE_PATH}/gestura/2.png`,
+             `${BASE_PATH}/gestura/4.png`,
             `${BASE_PATH}/gestura/3.png`,
+           
           ]}
         />
       </div>
@@ -660,7 +666,7 @@ skills: {
   category: "AI • Disaster Intelligence",
   title: "DRAMS (Disaster Relief & Rescue System)",
   src: "/assets/projects-screenshots/drams/1.png",
-  screenshots: ["1.png", "2.png", "3.png", "4.png"],
+  screenshots: ["1.png", "2.png", "3.png", "4.png","5.png","6.png"],
   live: "https://youtu.be/4QeUZMUl0Ec",
   github: "https://github.com/Shristirajpoot/Disaster-Relief-and-Rescue-System",
   skills: {
@@ -707,6 +713,8 @@ skills: {
             `${BASE_PATH}/drams/2.png`,
             `${BASE_PATH}/drams/3.png`,
             `${BASE_PATH}/drams/4.png`,
+              `${BASE_PATH}/drams/5.png`,
+              `${BASE_PATH}/drams/6.png`,
           ]}
         />
       </div>
