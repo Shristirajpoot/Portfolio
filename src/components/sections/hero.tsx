@@ -83,9 +83,7 @@ const HeroSection = () => {
       "text-slate-600 dark:text-zinc-400"
     )}
   >
-    I build production-grade AI applications, scalable backend systems,
-    and modern full-stack products using Python, Go, React, FastAPI,
-    Docker, cloud technologies, and machine learning.
+   Building production-grade AI applications, scalable backend systems, and modern web products with Python, Go, React, FastAPI, Docker, cloud technologies, and machine learning.
   </p>
 </BlurIn>
               </div>
@@ -93,12 +91,11 @@ const HeroSection = () => {
                
              <Link
   href="https://drive.google.com/file/d/1WsVUv8OXFOa0m3jB1DbECd-SFPc8T1cQ/view?usp=drive_link" target="_blank"
-  target="_blank"
   className="flex-1"
 >
   <BoxReveal delay={2} width="100%">
-    <Button className="flex items-center gap-2 w-full">
-      <File size={24} />
+    <Button className="flex items-center gap-3 w-full">
+      <File size={18} />
       <p>Resume</p>
     </Button>
   </BoxReveal>
@@ -115,9 +112,7 @@ const HeroSection = () => {
                         </Button>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="bottom">
-                      <p>pls 🥹 🙏</p>
-                    </TooltipContent>
+                    
                   </Tooltip>
                   <div className="flex items-center h-full gap-2">
                     <Link
