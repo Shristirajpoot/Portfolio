@@ -1,48 +1,73 @@
 const config = {
-  title: "Shristi Rajpoot | Full-Stack, AI & Web3 Engineer",
+  title: "Shristi Rajpoot | Software Engineer • AI Engineer • Full-Stack Developer",
+
   description: {
-    long: "Explore the portfolio of Shristi Rajpoot, a Full-Stack Engineer and AI/Web3 enthusiast passionate about building scalable systems, intelligent applications, and impactful products. From blockchain-based voting systems and payment gateways to AI-powered accessibility tools and high-performance backend services — discover projects that blend engineering depth with real-world impact.",
+    long:
+      "Explore the portfolio of Shristi Rajpoot, a Software Engineer passionate about backend engineering, AI systems, full-stack development, and scalable software. Discover production-grade applications, intelligent AI solutions, fintech platforms, accessibility technologies, and modern cloud-native projects built using Python, Go, React, FastAPI, Node.js, Docker, and AWS.",
+
     short:
-      "Shristi Rajpoot — Full-Stack Engineer building scalable systems, AI-powered applications, and Web3 solutions.",
+      "Shristi Rajpoot — Software Engineer building scalable backend systems, AI-powered applications, and modern full-stack products.",
   },
+
   keywords: [
     "Shristi Rajpoot",
-    "portfolio",
- "full-stack engineer",
-    "software engineer",
-    "backend developer",
-    "AI engineer",
-    "machine learning",
-    "web3 developer",
-    "blockchain",
-    "ethereum",
-    "solidity",
-    "next.js",
-    "react",
-    "go backend",
-    "distributed systems",
-    "payment systems",
-    "computer vision",
-    "NLP",
-    "accessibility tech",
-    "IIIT Jabalpur",
+    "Software Engineer",
+    "Full Stack Developer",
+    "Backend Engineer",
+    "AI Engineer",
+    "Python Developer",
+    "FastAPI",
+    "Go",
+    "React",
+    "Next.js",
+    "Node.js",
+    "TypeScript",
+    "Docker",
+    "AWS",
+    "MongoDB",
+    "PostgreSQL",
+    "Redis",
+    "Machine Learning",
+    "Computer Vision",
+    "Generative AI",
+    "LLM",
+    "Gemini API",
+    "OpenCV",
+    "TensorFlow",
+    "System Design",
+    "Distributed Systems",
+    "FinTech",
+    "Accessibility",
+    "Cybersecurity",
+    "Open Source",
+    "IIITDM Jabalpur",
+    "Portfolio",
   ],
-   author: "Shristi Rajpoot",
+
+  author: "Shristi Rajpoot",
+
   email: "shristirajpoot369@gmail.com",
-  site: "https://3d-portfolio-sigma-ivory.vercel.app",
-  // for github stars button
+
+  site: "https://portfolio-avc2.vercel.app/",
+
   githubUsername: "Shristirajpoot",
-  githubRepo: "3D-portfolio",
+
+  githubRepo: "Portfolio",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
+
   social: {
+    github: "https://github.com/Shristirajpoot",
+
+    linkedin:
+      "https://www.linkedin.com/in/shristi-rajpoot-36774b281/",
+
     twitter: "https://x.com/ShristiRajpoot",
-    linkedin: "https://www.linkedin.com/in/shristi-rajpoot-36774b281/",
+
     instagram: "https://www.instagram.com/_Shristirajpoot",
-   
-     github: "https://github.com/Shristirajpoot",
   },
 };
+
 export { config };
