@@ -82,7 +82,9 @@ const HeroSection = () => {
   className="flex-1"
 >
   <BoxReveal delay={2} width="100%">
-    <Button className="flex items-center gap-3 w-full">
+    <Button
+  className="flex items-center gap-3 w-full font-semibold"
+>
       <File size={18} />
       <p>Resume</p>
     </Button>
