@@ -357,36 +357,34 @@ export type Experience = {
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    startDate: "May 2025",
-    endDate: "Jul 2025",
-    title: "Backend Development Intern",
-    company: "Bluestock Fintech",
+    startDate: "Jun 2026",
+    endDate: "Present",
+    title: "Intern Developer",
+    company: "Itransition",
     description: [
-      "Developed production-grade backend services using FastAPI and PostgreSQL.",
-      "Built and maintained 10+ REST APIs supporting financial workflows and backend integrations.",
-      "Implemented authentication, request validation, and structured exception handling.",
-      "Optimized PostgreSQL queries and collaborated with frontend teams for seamless API integration.",
-    ],
+  "Selected after clearing Itransition's competitive internship selection process.",
+  "Participating in mentor-led software engineering training focused on modern backend and frontend development.",
+  "Developing production-quality software through mentor-guided assignments and collaborative engineering projects."
+],
     skills: [
       SkillNames.PYTHON,
-      SkillNames.FASTAPI,
-      SkillNames.POSTGRES,
-      SkillNames.DOCKER,
-      SkillNames.POSTMAN,
+      SkillNames.DJANGO,
+      SkillNames.GIT,
+      SkillNames.LINUX,
     ],
   },
-
   {
     id: 2,
     startDate: "Aug 2025",
     endDate: "Apr 2026",
     title: "Student Developer (Team Lead)",
     company: "Fusion ERP Portal • IIITDM Jabalpur",
-    description: [
-      "Led a team of 10 student developers building ERP modules.",
-      "Developed backend features using Django, Python, SQL, and Git.",
-      "Coordinated task planning, code reviews, testing, and module integration.",
-    ],
+   description: [
+  "Led a team of 10 student developers building ERP modules for IIITDM Jabalpur.",
+  "Developed backend features using Django, Python, SQL, and Git.",
+  "Coordinated task allocation, pull request reviews, and integration across multiple contributors.",
+  "Worked within a production ERP codebase following collaborative development practices."
+],
     skills: [
       SkillNames.DJANGO,
       SkillNames.PYTHON,
@@ -402,10 +400,10 @@ export const EXPERIENCE: Experience[] = [
     title: "Software Engineer Intern",
     company: "Infosys Springboard",
     description: [
-      "Built the WasteZero platform using the MERN stack.",
-      "Implemented REST APIs, authentication, MongoDB schema design, and real-time communication using Socket.IO.",
-      "Collaborated on full-stack development following industry practices.",
-    ],
+  "Engineered WasteZero, a MERN-based smart waste pickup platform during the internship.",
+  "Implemented role-based authentication, REST APIs, MongoDB schema design, and Socket.IO based real-time communication.",
+  "Collaborated in an industry-oriented software development environment following Agile practices."
+],
     skills: [
       SkillNames.REACT,
       SkillNames.NODEJS,
@@ -414,23 +412,24 @@ export const EXPERIENCE: Experience[] = [
       SkillNames.SOCKETIO,
     ],
   },
-
-  {
+   {
     id: 4,
-    startDate: "Jun 2026",
-    endDate: "Present",
-    title: "Intern Developer",
-    company: "Itransition",
+    startDate: "May 2025",
+    endDate: "Jul 2025",
+    title: "Backend Development Intern",
+    company: "Bluestock Fintech",
     description: [
-      "Selected after successfully clearing Itransition's placement test.",
-      "Participating in mentor-led software engineering training.",
-      "Strengthening backend development, software engineering principles, and collaborative development workflows.",
-    ],
+  "Built and maintained 10+ production-grade REST APIs using FastAPI and PostgreSQL.",
+  "Implemented authentication, request validation, and structured exception handling for secure backend services.",
+  "Optimized SQL queries and improved API performance for financial workflows.",
+  "Collaborated with frontend developers to deliver scalable API integrations."
+],
     skills: [
       SkillNames.PYTHON,
-      SkillNames.DJANGO,
-      SkillNames.GIT,
-      SkillNames.LINUX,
+      SkillNames.FASTAPI,
+      SkillNames.POSTGRES,
+      SkillNames.DOCKER,
+      SkillNames.POSTMAN,
     ],
   },
 
@@ -439,12 +438,13 @@ export const EXPERIENCE: Experience[] = [
     startDate: "2023",
     endDate: "Present",
     title: "AI & Full-Stack Developer",
-    company: "Open Source & Personal Projects",
+    company:"Independent Projects & Open Source",
     description: [
-      "Developed scalable full-stack applications using React, FastAPI, Node.js, MongoDB, and Firebase.",
-      "Integrated Gemini APIs, TensorFlow, OpenCV, and MediaPipe into real-world AI projects.",
-      "Contributed to multiple open-source repositories through GSSoC and SSOC.",
-    ],
+  "Designed and developed AI-powered applications spanning accessibility, cybersecurity, NLP, and computer vision.",
+  "Developed scalable full-stack systems using React, FastAPI, Node.js, MongoDB, PostgreSQL, and Firebase.",
+  "Integrated TensorFlow, OpenCV, MediaPipe, and Gemini APIs into real-world AI applications.",
+  "Contributed to multiple open-source repositories through GSSoC and SSOC."
+],
     skills: [
       SkillNames.PYTHON,
       SkillNames.REACT,
@@ -469,15 +469,15 @@ export const EXPERIENCE: Experience[] = [
 ========================= */
 
 export const themeDisclaimers = {
-  light: [
-    "You've switched to Light Mode ☀️",
-    "Hope your eyes are ready 😄",
-    "Brightness level: Maximum.",
-  ],
+light: [
+  "Light mode enabled ☀️",
+  "Brightness turned all the way up.",
+  "Hope your eyes are ready 😄",
+],
 
-  dark: [
-    "Welcome back to Dark Mode 🌙",
-    "Dark mode is always a good choice.",
-    "Your eyes thank you.",
-  ],
+dark: [
+  "Dark mode activated 🌙",
+  "Built for late-night coding.",
+  "Your eyes thank you.",
+],
 };
