@@ -69,7 +69,7 @@ const HeroSection = () => {
       "text-zinc-900 dark:text-zinc-100"
     )}
   >
-    Software Engineer • AI Engineer
+    Software Engineer • AI & Backend Engineer
   </h2>
 </BlurIn>
 
