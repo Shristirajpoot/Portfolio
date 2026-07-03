@@ -73,19 +73,7 @@ const HeroSection = () => {
   </h2>
 </BlurIn>
 
-<BlurIn delay={1.35}>
-  <p
-    className={cn(
-      "mt-4",
-      "max-w-xl",
-      "leading-7",
-      "text-base md:text-lg",
-      "text-slate-600 dark:text-zinc-400"
-    )}
-  >
-   Building production-grade AI applications, scalable backend systems, and modern web products with Python, Go, React, FastAPI, Docker, cloud technologies, and machine learning.
-  </p>
-</BlurIn>
+
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
                
